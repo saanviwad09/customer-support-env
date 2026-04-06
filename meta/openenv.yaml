@@ -1,0 +1,12 @@
+name: customer-support-env
+version: 1.0
+description: AI agent for handling customer support queries
+
+observation_space:
+  customer_query: string
+  customer_id: string
+
+action_space:
+  category: string
+  priority: integer
+  response: string
