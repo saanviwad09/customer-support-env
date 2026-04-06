@@ -1,0 +1,14 @@
+[project]
+name = "customer-support-env"
+version = "0.1.0"
+description = "Customer Support AI Environment"
+authors = [{name = "Your Name"}]
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
