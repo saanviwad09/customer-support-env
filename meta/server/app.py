@@ -16,5 +16,10 @@ def main():
 
     return app
 
-# expose app
+# expose app for import
 app = main()
+
+# 🔥 REQUIRED for OpenEnv (this was the missing piece)
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=7860)
